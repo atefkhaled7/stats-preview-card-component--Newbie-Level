@@ -1,0 +1,111 @@
+:root{
+--Very-dark-blue-main-background: hsl(233, 47%, 7%);
+--Dark-desaturated-blue-card-background: hsl(244, 38%, 16%);
+--Soft-violet-accent: hsl(277, 64%, 61%);
+
+--White-main-heading-stats : hsl(0, 0%, 100%);
+--Slightly-transparent-white-main-paragraph: hsla(0, 0%, 100%, 0.75);
+--Slightly-transparent-white-stat-headings: hsla(0, 0%, 100%, 0.6);
+
+--bg-violet: hsl(277deg, 100%, 50%, 0.42);
+--bg-light-violet: hsl(293deg, 42%, 35%, 0.24);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: "Inter", "Lexend Deca", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Very-dark-blue-main-background);
+}
+
+.container{
+  background-color: var(--Dark-desaturated-blue-card-background);
+  height: 500px;
+  width: 1200px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.info{
+  padding: 60px;
+  width: 600px;
+}
+
+.header{
+  color: var(--White-main-heading-stats);
+  font-weight:700;
+  font-size: 37px;
+}
+
+.special{
+  color: var(--Soft-violet-accent);
+}
+
+.main-p{
+  color: var(--Slightly-transparent-white-main-paragraph);
+  margin-top: 20px;
+  margin-bottom: 90px;
+  font-weight: 400;
+  line-height: 2;
+  width: 400px;
+}
+
+.stats{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.stats h1{
+  color: var(--White-main-heading-stats);
+  font-size: 22px;
+}
+
+.stats p{
+  color: var(--Slightly-transparent-white-stat-headings);
+  font-size: 14px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+.img{
+  background: url(images/image-header-desktop2.jpg);
+  border-radius: 0 10px 10px 0;
+  height: auto;
+  width: 600px;
+  filter: hue-rotate(7deg) blur(3px);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+@media screen and (max-width: 768px) {
+  .container{
+    flex-direction: column;
+    width: 100%;
+    height: 100rem;
+  }
+
+  .img{
+    height: auto;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
